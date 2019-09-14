@@ -7,7 +7,7 @@
 		"source_image": "ubuntu-1804-bionic-v20190813a",
 		"zone": "europe-west1-b",
 		"ssh_username": "appuser",
-		"machine_type": "f1-micro",
+		"machine_type": "g1-small",
       		"subnetwork": "default",
 		"tags": [
         	"puma-server"
@@ -17,7 +17,7 @@
 	"provisioners": [
 		{
 		"type": "shell",
-		"script": "scripts/install_ruby2.sh"
+		"script": "scripts/install_ruby.sh"
 		},
 		{"type": "shell",
 		"script": "scripts/install_mongodb.sh",
