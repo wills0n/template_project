@@ -1,8 +1,8 @@
 {
 	"variables": {
-		"project_id": "null",
-		"source_image": "null",
-		"machine_type": "null"
+		"project_id": "week3-24960",
+		"source_image": "ubuntu-1604-xenial-v20190913",
+		"machine_type": "f1-micro"
 	},
 	"builders": [
 		{
