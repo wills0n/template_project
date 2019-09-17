@@ -1,14 +1,20 @@
 {
+	"variables": {
+		"project_id": "null",
+		"source_image": "null",
+		"machine_type": "null"
+	},
 	"builders": [
 		{
 		"type": "googlecompute",
-		"project_id": "week3-249609",
+		"project_id": "{{user `project_id`}}",
 		"image_name": "reddit-base-{{timestamp}}",
-		"source_image": "ubuntu-1604-xenial-v20190913",
+		"source_image": "{{user `source_image`}}",
 		"zone": "europe-north1-a",
 		"ssh_username": "appuser",
-		"machine_type": "g1-small",
-      		"subnetwork": "default",
+		"machine_type": "{{user `machine_type`}}",
+      	"disk_size": "15",
+      	"subnetwork": "default",
 		"tags": [
         	"puma-server"
 		]
