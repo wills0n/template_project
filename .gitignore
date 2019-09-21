@@ -1,0 +1,6 @@
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
+Infra-e1f65b15c1be.json
