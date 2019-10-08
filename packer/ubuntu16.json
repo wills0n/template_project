@@ -1,6 +1,6 @@
 {
 	"variables": {
-		"project_id": "week3-24960",
+		"project_id": "calm-armor-253210",
 		"source_image": "ubuntu-1604-xenial-v20190913",
 		"machine_type": "f1-micro"
 	},
@@ -31,4 +31,3 @@
 		}
 	]
 }
-

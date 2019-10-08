@@ -1,7 +1,7 @@
 provider "google" {
-  credentials = "${file("Infra-e1f65b15c1be.json")}"
-  project     = "${var.project}"
-  region      = "${var.region}"
+  #credentials = "${file("Infra-e1f65b15c1be.json")}"
+  project = "${var.project}"
+  region  = "${var.region}"
 }
 
 resource "google_compute_instance" "app" {
