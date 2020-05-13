@@ -1,7 +1,7 @@
 {
 	"variables": {
-		"project_id": "calm-armor-253210",
-		"source_image": "ubuntu-1604-xenial-v20190913",
+		"project_id": "infra-277110",
+		"source_image": "ubuntu-1604-xenial-v20200429",
 		"machine_type": "f1-micro"
 	},
 	"builders": [
