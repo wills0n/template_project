@@ -1,7 +1,7 @@
 provider "google" {
   #credentials = "${file("Infra-e1f65b15c1be.json")}"
-  project = "infra-277110"
-  region  = "europe-north1"
+  project = var.project
+  region  = var.region
 }
 
 resource "google_compute_instance" "app" {
@@ -12,7 +12,7 @@ resource "google_compute_instance" "app" {
 
   boot_disk {
     initialize_params {
-      image = "reddit-base-1589376894"
+      image = var.disk_image
     }
   }
 
