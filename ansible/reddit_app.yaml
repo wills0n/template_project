@@ -1,6 +1,6 @@
 # Setup and configure ruby things for reddit app
 - name: "Reddit App: Configure app environment"
-  hosts: all 
+  hosts: default 
   gather_facts: no
   become: yes
 
@@ -20,7 +20,7 @@
 
 # Setup and configure mongodb for reddit app
 - name: "Reddit App: Install mongodb"
-  hosts: all
+  hosts: default
   gather_facts: no
   become: yes
 
